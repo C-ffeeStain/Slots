@@ -61,7 +61,7 @@ class Window(QMainWindow):
             self.report.setStyleSheet("#report{color: maroon}")
         self.report.adjustSize()
     def __init__(self):
-        urlretrieve("https://github.com/c-ffeestain/slots/raw/main/jackpot.txt", "jackpot.txt")
+        urlretrieve("https://github.com/c-ffeestain/slots/raw/main/data.json", "data.json")
         with open("data.json") as jp:
             self.data = json.load(jp)
         self.jackpot = int(self.data["jackpot"])
