@@ -50,12 +50,12 @@ class Window(QMainWindow):
             self.all_slot_nums[i].append(num) 
         if self.all_slot_nums[0][-1] == 7 and self.all_slot_nums[1][-1] == 7 and self.all_slot_nums[2][-1] == 7:
             self.money += self.jackpot
-            self.log("Congratulations! You won the jackpot and got ${0}.".format(self.jackpot))
+            self.log("Congratulations! You won the jackpot and got ${}.".format(self.jackpot))
             self.report.setStyleSheet("#report{color: gold}")
         elif all_equal([self.all_slot_nums[0][-1], self.all_slot_nums[1][-1], self.all_slot_nums[2][-1]]):
             self.money += self.win
             self.report.setStyleSheet("#report{color: green}")
-            self.log("Yay! You won and got ${0}.".format(self.win))
+            self.log("Yay! You won and got ${}.".format(self.win))
         else:
             self.log("Maybe next time... You lost and won nothing.")
             self.report.setStyleSheet("#report{color: maroon}")
