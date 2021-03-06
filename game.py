@@ -14,8 +14,8 @@ def main(argv, argc):
     cost = 25
     win = 75
     jackpot = 200
+    print("You get all the same numbers - ${0}\nYou don't get all the same numbers - $0\nYou get 7, 7, and 7 - ${1}\n".format(win,jackpot))
     while True:
-        print("You get all the same numbers - ${0}\nYou don't get all the same numbers - $0\nYou get 7, 7, and 7 - ${1}\n".format(win,jackpot))
         print("You have ${0}. It costs ${1} to roll the slots once.".format(money, cost))
         cmd = input("What would you like to do? Roll the slots (r) or quit (q)? ").lower()
         if cmd in ["q","quit"]:
