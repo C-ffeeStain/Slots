@@ -1,0 +1,3 @@
+load-plugins=PyQt5
+[REPORTS]
+output-format=msvs
